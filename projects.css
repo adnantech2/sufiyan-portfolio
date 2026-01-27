@@ -1,0 +1,301 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      overflow-x: hidden;
+  }
+
+  header {
+      position: sticky;
+      top: 0px;
+  }
+
+  h2 {
+      text-align: center;
+      font-size: 40px;
+      color: rgb(81, 173, 203);
+  }
+
+  /* NAVBAR */
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background-color: #c3bebe;
+      height: 50px;
+  }
+
+  /* MENU */
+  .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+  }
+
+  .nav-menu a {
+      text-decoration: none;
+      color: black;
+      font-size: 2rem;
+  }
+
+  nav ul li a:hover {
+      color: #00adb5;
+  }
+
+  /* HAMBURGER */
+  .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+  }
+
+  /* ===== FIRST SECTION ===== */
+  .first-sec {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 80px 24px;
+  }
+
+  /* Heading */
+  .heading {
+      max-width: 900px;
+      margin-bottom: 80px;
+  }
+
+  .heading h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+  }
+
+  .heading p {
+      font-size: 1.5rem;
+      color: #555;
+      line-height: 1.8;
+  }
+
+  /* Main layout */
+  .main-content {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: start;
+  }
+
+  /* Image */
+  .main-content img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 8px;
+  }
+
+  /* Right text */
+  .text-content h2 {
+      font-size: 1.8rem;
+      margin: 12px;
+  }
+
+  .text-content p {
+      font-size: 1.4rem;
+      line-height: 1.8;
+      color: #333;
+  }
+
+  .text-content {
+      margin-top: 100px;
+  }
+
+  /* second section */
+  .second-sec {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 80px 24px;
+  }
+
+  .m-content {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: start;
+  }
+
+  .m-content img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 8px;
+  }
+
+  .head {
+      max-width: 900px;
+      margin-bottom: 80px;
+  }
+
+  .heading h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+  }
+
+  .textt-content p {
+      font-size: 1.4rem;
+      line-height: 1.8;
+      color: #333;
+  }
+
+  .textt-content {
+      margin-top: 100px;
+  }
+
+  /* third section */
+
+  .third-sec {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 80px 24px;
+  }
+
+  /* Heading */
+  .top {
+      max-width: 900px;
+      margin-bottom: 80px;
+  }
+
+  .top h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+  }
+
+  .top p {
+      font-size: 1.5rem;
+      color: #555;
+      line-height: 1.8;
+  }
+
+  /* Main layout */
+  .content {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: start;
+  }
+
+  /* Image */
+  .content img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 8px;
+  }
+
+  /* Right text */
+  .type-content h2 {
+      font-size: 1.8rem;
+      margin: 12px;
+  }
+
+  .type-content p {
+      font-size: 1.4rem;
+      line-height: 1.8;
+      color: #333;
+  }
+
+  .content {
+      margin-top: 100px;
+  }
+
+.fourth-sec{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    height: 8vh;
+}
+.detail a{
+    text-decoration: none;
+    font-size: 2rem
+}
+ 
+
+  /* media query for mobile */
+  @media (max-width: 768px) {
+     .hamburger {
+          display: block;
+      }
+
+      .nav-menu {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 80px;
+          right: 0;
+          background: white;
+          width: 200px;
+          padding: 20px;
+      }
+
+      .nav-menu.active {
+          display: flex;
+      }
+
+      /* ===== SECTIONS ===== */
+      .first-sec,
+      .second-sec,
+      .third-sec {
+          padding: 40px 16px;
+      }
+
+      /* ===== HEADINGS ===== */
+      .heading h1,
+      .head h1,
+      .top h1 {
+          font-size: 1.6rem;
+          line-height: 1.3;
+      }
+
+      .heading p,
+      .top p {
+          font-size: 1rem;
+          line-height: 1.6;
+      }
+
+      /* ===== LAYOUT (STACK) ===== */
+      .main-content,
+      .m-content,
+      .content {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 24px;
+      }
+
+      /* ===== IMAGES ===== */
+      .main-content img,
+      .m-content img,
+      .content img {
+          width: 100%;
+          height: 240px;
+          object-fit: cover;
+      }
+
+      /* ===== TEXT ===== */
+      .text-content h2,
+      .textt-content h2,
+      .type-content h2 {
+          font-size: 1.25rem;
+          margin-bottom: 10px;
+      }
+
+      .text-content p,
+      .textt-content p,
+      .type-content p {
+          font-size: 1rem;
+          line-height: 1.6;
+      }
+
+      /* ===== SAFETY ===== */
+      body {
+          overflow-x: hidden;
+      }
+  }

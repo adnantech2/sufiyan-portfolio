@@ -1,0 +1,152 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      overflow-x: hidden;
+}
+  
+
+  header {
+      position: sticky;
+      top: 0px;
+  }
+
+  h2 {
+      text-align: center;
+      font-size: 40px;
+      color: rgb(81, 173, 203);
+  }
+
+  /* NAVBAR */
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background-color: #c3bebe;
+      height: 50px;
+  }
+
+  /* MENU */
+  .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+  }
+
+  .nav-menu a {
+      text-decoration: none;
+      color: black;
+      font-size: 2rem;
+  }
+
+  nav ul li a:hover {
+      color: #00adb5;
+  }
+
+  /* HAMBURGER */
+  .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+  }
+
+/*  first section */
+.container{
+    width: 1400px;
+    background-color: #222;
+    margin: auto;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 40px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(234, 231, 231);
+  padding: 0px  20px;
+}
+
+/* Main heading */
+.section h2 {
+  color: #1f6fd6;
+  font-size: 22px;
+  margin-bottom: 5px;
+  border-bottom: 2px dotted #bbb;
+  padding-bottom: 5px;
+}
+
+/* Sub heading */
+.section h3 {
+  color: #1f6fd6;
+  font-size: 25px;
+  margin-top: 20px;
+   border-bottom: 2px dotted #bbb;
+}
+
+/* Paragraphs */
+.section p {
+  font-size: 20px;
+  color: #222;
+  margin: 8px 0;
+}
+
+/* Bold titles */
+.section p strong {
+  font-weight: 600;
+}
+
+/* media query for mobile */
+ @media (max-width: 768px) {
+  
+    .hamburger {
+          display: block;
+      }
+
+      .nav-menu {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 80px;
+          right: 0;
+          background: white;
+          width: 200px;
+          padding: 20px;
+      }
+
+      .nav-menu.active {
+          display: flex;
+      }
+
+  /* CV container */
+  .container {
+    width: 100%;
+    margin: 15px auto;
+    padding: 20px 15px;
+  }
+
+  /* Section headings */
+  .section h2 {
+    font-size: 20px;
+  }
+
+  .section h3 {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  /* Paragraphs */
+  .section p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-left: 14px;
+  }
+
+  /* Bullet spacing */
+  .section p::before {
+    left: 0;
+  }
+}
