@@ -1,61 +1,61 @@
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
+  /* ===== GENERAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  body {
-      overflow-x: hidden;
-  }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
-  header {
-      position: sticky;
-      top: 0px;
-    
+/* ===== HEADER ===== */
+header {
     background: #f1f1f1;
     width: 100%;
+    position: sticky;
+    top: 0px;
 }
-  
 
-  h2 {
-      text-align: center;
-      font-size: 40px;
-      color: rgb(81, 173, 203);
-  }
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 50px; /* fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
 
-  /* NAVBAR */
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 25px;
-      background-color: #c3bebe;
-      height: 50px;
-  }
+.navbar h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
 
-  /* MENU */
-  .nav-menu {
-      display: flex;
-      list-style: none;
-      gap: 20px;
-  }
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
-  .nav-menu a {
-      text-decoration: none;
-      color: black;
-      font-size: 2rem;
-  }
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
 
-  nav ul li a:hover {
-      color: #00adb5;
-  }
+.nav-menu li a:hover{
+    color: rgb(84, 189, 224);
+}
 
-  /* HAMBURGER */
-  .hamburger {
-      display: none;
-      font-size: 28px;
-      cursor: pointer;
-  }
+/* ===== HAMBURGER (MOBILE) ===== */
+.hamburger {
+    display: none; /* will enable in media query */
+    cursor: pointer;
+    font-size: 28px;
+}
 
   /* first section */
   .image-wrapper {
@@ -233,4 +233,5 @@
       body {
           overflow-x: hidden;
       }
+
   }
