@@ -30,7 +30,7 @@ header {
 }
 
 .navbar h1 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -200,3 +200,4 @@ header {
         display: flex;
     }
 }
+
