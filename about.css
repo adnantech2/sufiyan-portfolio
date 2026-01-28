@@ -57,14 +57,15 @@ header {
     font-size: 28px;
 }
 /* first section */
- .image-wrapper{
-   position: relative;
-   max-width: 1200px; 
-   margin: 60px auto;
- }
+ .image-wrapper {
+    position: relative;
+    width: fit-content; /* wrapper exactly matches inner image width */
+    margin: 60px auto;
+}
 
-.image-wrapper p{
-  margin: 0px auto;
+.image-wrapper p {
+  text-align: center;
+  margin: 10px auto 0; /* optional spacing */
 }
   /* hide all images */
  .image-track img {
@@ -238,6 +239,7 @@ header {
       }
 
   }
+
 
 
 
